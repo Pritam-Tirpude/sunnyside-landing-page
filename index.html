@@ -25,6 +25,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Frontend Mentor | Sunnyside agency landing page</title>
   </head>
@@ -45,8 +46,13 @@
         </div>
       </nav>
       <div class="intro-heading">
-        <h1>We are creatives</h1>
-        <div class="arrow-down">
+        <h1 data-aos="fade-down" data-aos-duration="1500">We are creatives</h1>
+        <div
+          class="arrow-down"
+          data-aos="fade-down"
+          data-aos-duration="1500"
+          data-aos-delay="500"
+        >
           <img src="./images/icon-arrow-down.svg" alt="icon" />
         </div>
       </div>
@@ -54,7 +60,11 @@
     <main role="main">
       <section>
         <div class="brand-container" id="transform">
-          <div class="brand-text">
+          <div
+            class="brand-text"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
             <h2>Transform your brand</h2>
             <p>
               We are a full-service creative agency specializing in helping
@@ -93,7 +103,12 @@
               alt="standout"
             />
           </div>
-          <div class="audience-text">
+          <div
+            class="audience-text"
+            class="brand-text"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
             <h2>Stand out to the right audience</h2>
             <p>
               Using a collaborative formula of designers, researchers,
@@ -119,7 +134,12 @@
               src="./images/mobile/image-graphic-design.jpg"
               alt="graphic image"
             />
-            <div class="graphic-text">
+            <div
+              class="graphic-text"
+              class="brand-text"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
               <h3>Graphic design</h3>
               <p>
                 Great design makes you memorable. We deliver artwork that
@@ -139,7 +159,12 @@
               src="./images/mobile/image-photography.jpg"
               alt="photography"
             />
-            <div class="photography-text">
+            <div
+              class="photography-text"
+              class="brand-text"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
               <h3>Photography</h3>
               <p>
                 Increase your credibility by getting the most stunning,
@@ -151,8 +176,15 @@
       </section>
       <section>
         <div class="client-testionials" id="testimonial">
-          <h3>Client Testimonials</h3>
-          <div class="client-profiles">
+          <h3 data-aos="fade-up" data-aos-duration="1500">
+            Client Testimonials
+          </h3>
+          <div
+            class="client-profiles"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="500"
+          >
             <div class="client-card">
               <img src="./images/image-emily.jpg" alt="emily" />
               <p>
@@ -191,7 +223,7 @@
       </section>
       <section>
         <div class="deserts">
-          <div class="milk-bottles">
+          <div class="milk-bottles" data-aos="zoom-in" data-aos-duration="1500">
             <img
               class="desktop-milk-bottles"
               src="./images/desktop/image-gallery-milkbottles.jpg"
@@ -203,7 +235,12 @@
               alt="milk bottles"
             />
           </div>
-          <div class="orange">
+          <div
+            class="orange"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+            data-aos-delay="200"
+          >
             <img
               class="desktop-orange"
               src="./images/desktop/image-gallery-orange.jpg"
@@ -215,7 +252,12 @@
               alt="orange"
             />
           </div>
-          <div class="cone">
+          <div
+            class="cone"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+            data-aos-delay="300"
+          >
             <img
               class="desktop-cone"
               src="./images/desktop/image-gallery-cone.jpg"
@@ -227,7 +269,12 @@
               alt="cone"
             />
           </div>
-          <div class="sugar-cubes">
+          <div
+            class="sugar-cubes"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+            data-aos-delay="400"
+          >
             <img
               class="desktop-sugar"
               src="./images/desktop/image-gallery-sugarcubes.jpg"
@@ -244,13 +291,23 @@
     </main>
     <footer>
       <div class="footer-container">
-        <h3>sunnyside</h3>
-        <ul class="footer-links">
+        <h3 data-aos="fade-down" data-aos-duration="1500">sunnyside</h3>
+        <ul
+          class="footer-links"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+          data-aos-delay="200"
+        >
           <li><a href="#transform">About</a></li>
           <li><a href="#graphic-photo">Services</a></li>
           <li><a href="#testimonial">Projects</a></li>
         </ul>
-        <div class="social-icons">
+        <div
+          class="social-icons"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          data-aos-delay="300"
+        >
           <div class="facebook">
             <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
           </div>
@@ -277,5 +334,9 @@
       >
     </div>
     <script src="./js/app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -1,0 +1,66 @@
+.header-container {
+  min-height: 100vh;
+  background: url("../images/desktop/image-header.jpg") no-repeat center/cover;
+}
+
+nav {
+  padding: 3rem;
+  @include flex(space-between, center, row);
+
+  .hamburger {
+    display: none;
+  }
+
+  .nav-links {
+    @include flex(space-around, center, row);
+    width: 40%;
+    list-style: none;
+
+    li > a {
+      text-decoration: none;
+      color: $neutral_white;
+      font-family: $font_barlow;
+      font-weight: lighter;
+      transition: all 0.5s ease;
+
+      &:hover {
+        color: $primary_dark_blue;
+      }
+    }
+
+    li > button {
+      font-family: $font_fraunces;
+      padding: 1.5rem 3rem;
+      border: none;
+      border-radius: 3rem;
+      font-size: 1.5rem;
+      background: $neutral_white;
+      font-weight: lighter;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.5s ease;
+
+      &:hover {
+        background: hsl(211, 100%, 68%);
+        color: $neutral_white;
+      }
+    }
+  }
+}
+
+.intro-heading {
+  @include flex(center, center, column);
+  padding: 5rem;
+
+  h1 {
+    color: $neutral_white;
+    font-family: $font_fraunces;
+    font-size: 5rem;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+  }
+
+  .arrow-down {
+    margin-top: 5rem;
+  }
+}

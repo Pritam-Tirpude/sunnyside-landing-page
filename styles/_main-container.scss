@@ -1,0 +1,361 @@
+.brand-container {
+  @include flex(center, center, row);
+
+  .brand-text {
+    padding: 5rem 10rem;
+    flex: 1 0 50%;
+    h2 {
+      font-family: $font_fraunces;
+      color: $neutral_dark_desaturated_blue;
+      font-size: 4rem;
+    }
+
+    p {
+      margin-top: 2rem;
+      font-family: $font_barlow;
+      color: $neutral_dark_grayish_blue;
+    }
+
+    .learn-more-brand {
+      margin-top: 3rem;
+      position: relative;
+      a {
+        text-decoration: none;
+        font-family: $font_fraunces;
+        color: $neutral_dark_desaturated_blue;
+      }
+
+      a::after {
+        content: "";
+        position: absolute;
+        top: 17px;
+        left: -8px;
+        width: 120px;
+        height: 10px;
+        border-radius: 1rem;
+        background: hsl(51, 71%, 73%);
+        z-index: -1;
+        transition: background 0.5s ease;
+      }
+
+      a:hover::after {
+        content: "";
+        background: $primary_yellow;
+      }
+    }
+  }
+
+  .brand-img {
+    flex: 1 0 50%;
+    overflow: hidden;
+
+    .mobile-transform {
+      display: none;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      transition: all 0.5s ease-in;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+.audience-container {
+  @include flex(center, center, row);
+  position: relative;
+  top: -4px;
+  .audience-img {
+    flex: 1 0 50%;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.5s ease-in;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+
+    .mobile-standout {
+      display: none;
+    }
+  }
+
+  .audience-text {
+    padding: 5rem 10rem;
+    flex: 1 0 50%;
+
+    h2 {
+      font-family: $font_fraunces;
+      color: $neutral_dark_desaturated_blue;
+      font-size: 4rem;
+    }
+
+    p {
+      margin-top: 2rem;
+      font-family: $font_barlow;
+      color: $neutral_dark_grayish_blue;
+    }
+
+    .learn-more-audience {
+      margin-top: 3rem;
+      position: relative;
+      a {
+        text-decoration: none;
+        font-family: $font_fraunces;
+        color: $neutral_dark_desaturated_blue;
+      }
+
+      a::after {
+        content: "";
+        position: absolute;
+        top: 17px;
+        left: -8px;
+        width: 120px;
+        height: 10px;
+        border-radius: 1rem;
+        background: hsl(314, 95%, 84%);
+        z-index: -1;
+        transition: background 0.5s ease;
+      }
+
+      a:hover::after {
+        content: "";
+        background: $primary_soft_red;
+      }
+    }
+  }
+}
+
+.graphic-photography-container {
+  @include flex(center, center, row);
+  position: relative;
+  top: -7px;
+
+  .graphic-mobile {
+    display: none;
+  }
+
+  .graphic-design {
+    flex: 1 0 50%;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .graphic-text {
+      position: absolute;
+      bottom: 0;
+      @include flex(center, center, column);
+      text-align: center;
+      padding: 7rem 15rem;
+
+      h3 {
+        font-family: $font_fraunces;
+        color: $primary_dark_desaturated_cyan;
+        font-size: 2.5rem;
+      }
+
+      p {
+        margin-top: 2rem;
+        color: $primary_dark_moderate_cyan;
+        font-family: $font_barlow;
+      }
+    }
+  }
+
+  .photography {
+    flex: 1 0 50%;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .mobile-photography {
+      display: none;
+    }
+
+    .photography-text {
+      position: absolute;
+      bottom: 0;
+      @include flex(center, center, column);
+      text-align: center;
+      padding: 7rem 15rem;
+
+      h3 {
+        font-family: $font_fraunces;
+        color: $neutral_dark_desaturated_blue;
+        font-size: 2.5rem;
+      }
+
+      p {
+        margin-top: 2rem;
+        color: $neutral_dark_desaturated_blue;
+        font-family: $font_barlow;
+      }
+    }
+  }
+}
+
+.client-testionials {
+  padding: 5rem 15rem;
+
+  h3 {
+    text-align: center;
+    padding-bottom: 7rem;
+    font-family: $font_fraunces;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: $neutral_dark_grayish_blue;
+    letter-spacing: 0.5rem;
+  }
+
+  .client-profiles {
+    @include flex(space-between, center, row);
+    padding-bottom: 10rem;
+
+    .client-card {
+      @include flex(center, center, column);
+      text-align: center;
+      padding: 0rem 1rem;
+      transition: all 0.5s ease;
+      overflow: hidden;
+
+      img {
+        width: 30%;
+        border-radius: 50%;
+      }
+
+      p {
+        padding-top: 5rem;
+        color: $neutral_very_dark_grayish_blue;
+        font-family: $font_barlow;
+      }
+
+      .name {
+        padding-top: 5rem;
+
+        h4 {
+          font-family: $font_fraunces;
+          color: $neutral_dark_desaturated_blue;
+        }
+
+        span {
+          display: block;
+          color: $neutral_grayish_blue;
+          font-family: $font_barlow;
+          padding-top: 2rem;
+          font-size: 1.5rem;
+        }
+      }
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.deserts {
+  @include flex(center, center, row);
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  .milk-bottles {
+    overflow: hidden;
+    .mobile-milk-bottles {
+      display: none;
+    }
+  }
+  .orange {
+    overflow: hidden;
+    .mobile-orange {
+      display: none;
+    }
+  }
+  .cone {
+    overflow: hidden;
+    .mobile-cone {
+      display: none;
+    }
+  }
+  .sugar-cubes {
+    overflow: hidden;
+    .mobile-sugar {
+      display: none;
+    }
+  }
+}
+
+.footer-container {
+  position: relative;
+  top: -4px;
+  padding: 8rem 10rem;
+  @include flex(center, center, column);
+  background: hsl(167, 44%, 70%);
+
+  h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 5rem;
+    color: hsl(167, 42%, 15%);
+    font-weight: bolder;
+  }
+
+  .footer-links {
+    @include flex(space-around, center, row);
+    padding-top: 5rem;
+    width: 40%;
+    list-style: none;
+
+    li > a {
+      color: hsl(168, 50%, 25%);
+      text-decoration: none;
+      font-family: $font_barlow;
+      transition: all 0.5s ease;
+      &:hover {
+        color: $neutral_white;
+      }
+    }
+  }
+
+  .social-icons {
+    @include flex(space-around, center, row);
+    padding-top: 10rem;
+    width: 30%;
+
+    .fab {
+      color: $primary_dark_desaturated_cyan;
+      cursor: pointer;
+      transition: all 0.5s ease;
+      &:hover {
+        color: $neutral_white;
+      }
+    }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  font-family: "Poppins", sans-serifs;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

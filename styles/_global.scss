@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1.8rem;
+}
+
+$font_barlow: "Barlow", sans-serif;
+$font_fraunces: "Fraunces", serif;
+
+$primary_soft_red: hsl(7, 99%, 70%);
+$primary_yellow: hsl(51, 100%, 49%);
+$primary_dark_desaturated_cyan: hsl(167, 40%, 24%);
+$primary_dark_blue: hsl(198, 62%, 26%);
+$primary_dark_moderate_cyan: hsl(168, 34%, 41%);
+
+$neutral_dark_desaturated_blue: hsl(212, 27%, 19%);
+$neutral_very_dark_grayish_blue: hsl(213, 9%, 39%);
+$neutral_dark_grayish_blue: hsl(232, 10%, 55%);
+$neutral_grayish_blue: hsl(210, 4%, 67%);
+$neutral_white: hsl(0, 0%, 100%);
+
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}

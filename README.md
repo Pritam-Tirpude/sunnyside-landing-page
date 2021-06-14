@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Sunnyside Landing Page Solution](https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw/hub/html5-sass-css-javascriptflexbox-grid-UQrPcdxcx)
-- Live Site URL: [Live Site](https://loopstudiios-landing-page.netlify.app/)
+- Solution URL: [Sunnyside Landing Page Solution](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef/hub/html5-css3-sass-javascript-flex-grid-xsqSoj0cq)
+- Live Site URL: [Live Site](https://sunnyside-landing-site.netlify.app/)
 
 ## My process
 

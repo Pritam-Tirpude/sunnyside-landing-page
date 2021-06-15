@@ -13,6 +13,7 @@ html {
 body {
   min-height: 100vh;
   font-size: 1.8rem;
+  overflow-x: hidden;
 }
 
 .header-container {
@@ -251,6 +252,7 @@ nav .nav-links li > button:hover {
           flex-direction: row;
   position: relative;
   top: -4px;
+  overflow: hidden;
 }
 
 .audience-container .audience-img {
@@ -661,7 +663,7 @@ nav .nav-links li > button:hover {
   width: 100%;
   height: 2px;
   visibility: hidden;
-  background: #19536b;
+  background: #206053;
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;

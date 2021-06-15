@@ -740,7 +740,7 @@ nav .nav-links li > button:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background: #458c7e;
+    background: #ff5100;
     position: absolute;
     width: 100%;
     height: 100vh;
@@ -749,8 +749,8 @@ nav .nav-links li > button:hover {
     z-index: 2;
     -webkit-clip-path: circle(100px at 90% -50%);
             clip-path: circle(100px at 90% -50%);
-    -webkit-transition: all 1s ease;
-    transition: all 1s ease;
+    -webkit-transition: all 1.2s ease;
+    transition: all 1.2s ease;
   }
   nav .nav-links li {
     opacity: 0;
